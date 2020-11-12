@@ -163,3 +163,41 @@
     /*Fin del footer*/
     /*Fin de Servicios*/
 }
+@media screen and (max-width:400px){
+    h1{
+        font-size: 35px;
+    }
+    .contenido-header > img{
+        width: 250px;
+    }
+
+    .title{
+        font-size: 27px;
+    }
+
+    .texto-question h2{
+        font-size: 27px;
+    }
+    .contenedor p{
+        font-size: 18px;
+    }
+    .question img{
+        width: 250px;
+    }
+
+    .resultados-textos h4{
+        font-size: 38px;
+    }
+
+    .box-skills h4 {
+        width: 325px;
+        padding-left: 35px;
+    }
+    .servicios img {
+        width: 250px;
+    }
+
+    .partFooter > img {
+        width: 175px;
+    }
+}
