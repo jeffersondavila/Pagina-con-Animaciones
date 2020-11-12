@@ -201,3 +201,37 @@
         width: 175px;
     }
 }
+
+@media screen and (max-width:300px){
+    h1 {
+        font-size: 30px;
+    }
+    .contenido-header > img {
+        width: 200px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .article > h3 {
+        font-size: 23px;
+    }
+    .texto-question h2 {
+        font-size: 25px;
+    }
+    .question img {
+        width: 200px;
+    }
+    .resultados-textos h4 {
+        font-size: 30px;
+    }
+    .box-skills h4 {
+        width: 260px;
+        padding-left: 40px;
+    }
+    .servicios img {
+        width: 200px;
+    }
+    .partFooter > img {
+        width: 150px;
+    }
+}
