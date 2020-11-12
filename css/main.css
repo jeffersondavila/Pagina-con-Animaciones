@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5{
+    color: #1d273b;
+    font-weight: 300;
+}
+h1{
+    font-size: 50px;
+}
+
+/*Inicio del Header*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;/*esconde todo lo que se sale de la caja*/
+}
+header::before{
+    content: "";
+    display: block;
+    margin-bottom: 105px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    border-bottom: transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 0.5s;
+}
+.nav{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;/*manda cada caja a una esquina*/
+    align-items: center;/*Los centra verticalmente (Y)*/
+    padding: 0 40px;
+}
+.nav .logo{
+    width: 80px;
+    height: 80px;/*Esto mide el contenedor*/
+    margin-top: 15px;
+}
+.nav .logo img{
+    height: 70%;/*Ahora la imagen mide toda la caja que en total son 80px*/
+    vertical-align: top;
+}
+.enlaces-header{
+    font-weight: 300;
+}
+.nav .enlaces-header a{
+    text-decoration: none;
+    color: #5D6678;
+    margin-left: 20px;
+    transition: color 300ms;
+}
+.nav .enlaces-header a:hover{
+    color: #333841;
+}
+.hamburger{
+    display: none;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in ;
+}
+.hamburger > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+.contenido-header{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenido-header > img{
+    width: 550px;
+    animation: ease-in animat 1s;
+}
+@keyframes animat{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.texto-header{
+    margin-left: 30px;
+}
+.contenedor p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+.texto-header a{
+    display: block;
+    width: 130px;
+    background-color: #1FDE82;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 14px 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+/*Fin del Header*/
+
+/*Inicio del Main*/
+main{
+    width: 100%;
+    height: auto;
+}
+.contenedor2{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;/*esconde todo lo que se sale de la caja*/
+    padding: 60px 0;/*el primero es arriba, abajo y el 0 es derecha izquierda*/
+}
+.ofrecemos{
+    background-color: #f2f2f2;
+}
+.title{
+    font-size: 40px;
+}
+.contenedor-articles{
+    display: flex;
+    flex-wrap: wrap;/*si no cabe que se coloque abajo*/
+    margin-top: 60px;
+    justify-content: space-around;
+}
+.article{
+    width: 29%;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;/*arriba derecha abajo izquierda*/
+    transition: all 0.5ms;
+}
+.article:hover{
+    box-shadow: 0 4px 10px rgba(17, 29, 48, 0.26);
+}
+.article > i{
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #1FDE82;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+.article > h3{
+    font-size: 24px;
+    margin-top: 25px;
+}
+.article > p{
+    font-weight: 100;
+    color: #5D6678;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.article > a{
+    text-decoration: none;
+    color: #5D6678;
+    font-weight: 400;
+    transition: all 0.45s;
+}
+.article > a:hover{
+    color: #1FDE82;
+}
+/*Fin del Main*/
+
+/*Inicio del question*/
+.question{
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question img{
+    width: 550px;
+}
+.texto-question{
+    margin-left: 30px;
+}
+.texto-question h2{
+    font-size: 40px;
+}
+.texto-question a{
+    display: block;
+    width: 130px;
+    background-color: #1FDE82;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 14px 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+/*Fin del question*/
+
+/*Inicio de los Resultados*/
+.resultados{
+    background-color: #2570ff;
+    padding-top: 30px;
+}
+.content-resultados{
+    display: flex;
+    justify-content: space-evenly;
+}
+.secciones{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.secciones .seccion{
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+}
+.seccion > h4{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.seccion > p{
+    font-weight: 300;
+    color: #f2f5fc;
+}
+.resultados-textos{
+    width: 37%;
+}
+.resultados-textos h4{
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.resultados-textos p{
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.resultados-textos a{
+    width: 130px;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+}
+/*Fin de los Resultados*/
+
+/*Inicio de los Servicios*/
+.servicios{
+    display: flex;
+    justify-content: space-between;
+}
+.servicios img{
+    width: 500px;
+}
+.box-skills{
+    margin: 30px 30px 0 0;/*arriba derecha abajo izquierda*/
+}
+.box-skills h4{
+    font-size: 24px;
+    background-color: #f2f2f2;
+    width: 350px;
+    border-radius: 6px;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 10px;
+}
+.box-skills i{
+    color: #1FDE82;
+    margin-right: 10px;
+}
+/*Fin de los Servicios*/
+
+/*Inicio del footer*/
+footer{
+    width: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.partFooter{
+    width: 20%;
+    text-align: center;
+}
+.partFooter > img{
+    width: 60%;
+}
+.partFooter h4{
+    color: #1d273b;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.partFooter a{
+    display: block;
+    text-decoration: none;
+    color: #5D6678;
+    font-weight: 300;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+.partFooter a:hover{
+    color: #1FDE82;
+}
+.socialMedia{
+    display: inline-flex;
+}
+.socialMedia i{
+    font-size: 20px;
+    color: #adb6c7;
+    border: 1px solid #adb6c7;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 10px;
+    transition: all ease-in-out 0.3s;
+}
+.socialMedia i:hover{
+    color: #ffffff;
+    background-color: #1FDE82;
+}
+/*Fin del footer*/

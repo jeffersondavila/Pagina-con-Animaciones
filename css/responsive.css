@@ -1,0 +1,165 @@
+@media screen and (max-width:800px){
+    /*Header*/
+    header::before{
+        margin-bottom: 50px;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .contenido-header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    .contenido-header > img{
+        margin-top: 10px;
+        width: 400px;
+    }
+    .texto-header a{
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    /*Fin del Header*/
+
+    /*Ofrecemos*/
+    .title{
+        font-size: 35px;
+    }
+    .article{
+        width: 45%;
+    }
+    /*Fin de ofrecemos*/
+
+    /*Inicio de Question*/
+    .question{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .texto-question h2{
+        font-size: 35px;
+    }
+    .texto-question a{
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 22px;
+    }
+    .question img{
+        width: 400px;
+    }
+    /*Fin de Question*/
+
+    /*Inicio de resultados*/
+    .content-resultados{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+    .resultados-textos{
+        margin: 0 auto;
+        margin-bottom: 55px;
+    }
+    .secciones{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .secciones .seccion{
+        width: 45%;
+    }
+    /*Fin de resultados*/
+
+    /*Inicio de Servicios*/
+    .servicios{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .box-skills{
+        margin-bottom: 35px;
+    }
+    .servicios img{
+        width: 400px;
+    }
+    .box-skills h4{
+        width: 550px;
+        padding-left: 100px;
+    }
+    /*Fin de servicios*/
+
+    /*Inicio del footer*/
+    footer{
+        justify-content: space-evenly;
+    }
+    .partFooter{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+    /*Fin del footer*/
+}
+
+@media screen and (max-width:755px){
+    .resultados-textos{
+        width: 70%;
+    }
+}
+@media screen and (max-width:600px){
+    /*Inicio del header*/
+    h1{
+        font-size: 40px;
+    }
+    .nav{
+        padding: 0 30px;
+    }
+    .enlaces-header{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .contenedor p{
+        font-size: 19px;
+    }
+    .contenido-header > img{
+        width: 350px;
+    }
+    /*Fin del header*/
+
+    /*Ofrecemos*/
+    .title{
+        font-size: 30px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .article{
+        width: 85%;
+    }
+    /*Fin Ofrecemos*/
+
+    /*Inicio de Question*/
+    .texto-question h2{
+        font-size: 30px;
+    }
+    .question img{
+        width: 350px;
+    }
+    /*Fin de Question*/
+
+    /*Inicio de Resultados*/
+    .secciones .seccion{
+        width: 80%;
+    }
+    /*Fin de Resultados*/
+
+    /*Inicio de Servicios*/
+    .servicios img{
+        width: 350px;
+    }
+
+    /*Footer*/
+    .partFooter{
+        width: 90%;
+    }
+    .partFooter > img{
+        width: 200px;
+    }
+    /*Fin del footer*/
+    /*Fin de Servicios*/
+}
