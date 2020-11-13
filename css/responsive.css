@@ -109,7 +109,26 @@
         padding: 0 30px;
     }
     .enlaces-header{
-        display: none;
+        position: fixed;
+        background: #000046;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+        transition: ease-in-out 0.5s;
+    }
+    .nav .menuHamburguesa{
+        clip-path: circle(150% at 100% 0);
+    }
+    .nav .enlaces-header a{
+        color: #ffffff;
     }
     .hamburger{
         display: block;
